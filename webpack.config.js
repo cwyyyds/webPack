@@ -6,6 +6,9 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 
 module.exports = {
+  //6.解决mode报错
+  mode: 'development' || 'production' || 'none',
+
   // 3.设置默认设置 自定义入口出口，安装有用插件
   entry: './src/index.js', //入口
   output: {
