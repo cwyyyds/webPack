@@ -26,4 +26,10 @@ module.exports = {
     new CleanWebpackPlugin(), // 删除的是ouput path 里配置的那个输出文件的文件夹
     // 默认情况下dist
   ],
+  //7.下载安装时时更新功能yarn add webpack-dev-server -D，packge.json配置相关文件
+  //8.添加启动自动打开功能
+  devServer: {
+    port: 3000, // 端口号
+    open: true,
+  },
 }
