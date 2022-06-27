@@ -50,6 +50,11 @@ module.exports = {
         test: /\.less$/,
         use: ['style-loader', 'css-loader', 'less-loader'],
       },
+      // 10. 图片处理
+      {
+        test: /\.(png|jpg|gif|jpeg)$/i,
+        type: 'asset', //类似方法 小于8转换 大于8路径
+      },
     ],
   },
 }
